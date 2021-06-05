@@ -49,9 +49,9 @@ jobs:
         password: ${{ secrets.UPSB_KEY }}
         port: 22
         script: |
-          cd UPSB/upsb-credit
+          cd UPSB/upsb-deposit
           git pull origin master
           npm install
           npm run build
-          rm -r /data/UPSB/credit/build
-          mv build /data/UPSB/credit
+          rm -r /data/UPSB/deposit/build
+          mv build /data/UPSB/deposit
